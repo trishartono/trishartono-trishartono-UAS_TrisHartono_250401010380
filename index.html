@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Satwa Nusantara</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🐾 EduSatwa</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                
+                <!-- MENU DROPDOWN KATEGORI -->
+                <li class="dropdown">
+                    <a href="#kategori" class="dropbtn">Kategori ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#kategori-mamalia">Mamalia</a>
+                        <a href="#kategori-burung">Burung</a>
+                        <a href="#kategori-reptil">Reptil</a>
+                        <a href="#kategori-ikan">Ikan</a>
+                    </div>
+                </li>
+
+                <li><a href="#dilindungi">Satwa Dilindungi</a></li>
+                <li><a href="#suara">Suara Satwa</a></li>
+                <li><a href="#video">Galeri Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <div class="hero" id="home">
+        <h1>Kenali dan Lindungi Satwa Dunia</h1>
+        <p>Platform edukasi interaktif untuk mempelajari berbagai jenis hewan, habitat, serta peran penting mereka dalam ekosistem bumi.</p>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+        <!-- KATEGORI SATWA -->
+        <section id="kategori">
+            <h2>Kategori Satwa</h2>
+            <div class="category-grid">
+                
+                <!-- Card Mamalia -->
+                <div class="category-card" id="kategori-mamalia" data-species="Mamalia">
+                    <img src="https://images.unsplash.com/photo-1575550959106-5a7defe28b56?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mamalia">
+                    <div class="category-info">
+                        <h3>Mamalia</h3>
+                        <p>Hewan menyusui yang berdarah panas, seperti gajah, harimau, dan lumba-lumba.</p>
+                    </div>
+                </div>
+
+                <!-- Card Burung -->
+                <div class="category-card" id="kategori-burung" data-species="Burung (Aves)">
+                    <img src="https://images.unsplash.com/photo-1588715703712-2a8d1b0c9619?q=80&w=1116&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Burung">
+                    <div class="category-info">
+                        <h3>Burung (Aves)</h3>
+                        <p>Satwa bersayap dan berbulu yang memiliki kemampuan adaptasi udara yang luar biasa.</p>
+                    </div>
+                </div>
+
+                <!-- Card Reptil -->
+                <div class="category-card" id="kategori-reptil" data-species="Reptil">
+                    <img src="https://plus.unsplash.com/premium_photo-1661898166024-7d141970335b?q=80&w=1391&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Reptil">
+                    <div class="category-info">
+                        <h3>Reptil</h3>
+                        <p>Hewan melata berdarah dingin dengan kulit bersisik, contohnya komodo dan buaya.</p>
+                    </div>
+                </div>
+
+                <!-- Card Ikan (Kategori Baru) -->
+                <div class="category-card" id="kategori-ikan" data-species="Ikan (Pisces)">
+                    <img src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ikan">
+                    <div class="category-info">
+                        <h3>Ikan (Pisces)</h3>
+                        <p>Satwa air berdarah dingin yang bernapas dengan insang dan bergerak menggunakan sirip.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TABEL SATWA DILINDUNGI -->
+        <section id="dilindungi">
+            <h2>Satwa Terancam Punah & Dilindungi</h2>
+            <div class="table-container">
+                <table class="satwa-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Satwa</th>
+                            <th>Nama Ilmiah</th>
+                            <th>Habitat Asli</th>
+                            <th>Status IUCN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Harimau Sumatra</td>
+                            <td><i>Panthera tigris sumatrae</i></td>
+                            <td>Hutan Hujan Sumatra</td>
+                            <td><span class="status-badge status-kritis">Kritis (CR)</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Badak Jawa</td>
+                            <td><i>Rhinoceros sondaicus</i></td>
+                            <td>Taman Nasional Ujung Kulon</td>
+                            <td><span class="status-badge status-kritis">Kritis (CR)</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Orangutan Kalimantan</td>
+                            <td><i>Pongo pygmaeus</i></td>
+                            <td>Hutan Hujan Kalimantan</td>
+                            <td><span class="status-badge status-kritis">Kritis (CR)</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Komodo</td>
+                            <td><i>Varanus komodoensis</i></td>
+                            <td>Pulau Komodo, NTT</td>
+                            <td><span class="status-badge status-genting">Genting (EN)</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Arwana Super Red</td>
+                            <td><i>Scleropages formosus</i></td>
+                            <td>Sungai Kapuas, Kalimantan</td>
+                            <td><span class="status-badge status-genting">Genting (EN)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SUARA SATWA -->
+        <section id="suara">
+            <h2>Dengarkan Suara Satwa</h2>
+            <div class="audio-grid">
+                <div class="audio-card">
+                    <div class="audio-avatar">🦁</div>
+                    <h3>Auman Singa</h3>
+                    <audio id="audio-singa" src="audio/singa.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-singa">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐘</div>
+                    <h3>Pekikan Gajah</h3>
+                    <audio id="audio-gajah" src="audio/gajah.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-gajah">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐦</div>
+                    <h3>Burung</h3>
+                    <audio id="audio-burung" src="audio/cendrawasih.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-burung">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🦎</div>
+                    <h3>cicak</h3>
+                    <audio id="audio-cicak" src="audio/cicak.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-cicak">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐐</div>
+                    <h3>Kambing</h3>
+                    <audio id="audio-kambing" src="audio/kambing.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-kambing">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🦅</div>
+                    <h3>Pekikan Elang</h3>
+                    <audio id="audio-elang" src="audio/elang.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-elang">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐒</div>
+                    <h3>Orangutan</h3>
+                    <audio id="audio-orangutan" src="audio/orangutan.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-orangutan">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐄</div>
+                    <h3>Sapi</h3>
+                    <audio id="audio-sapi" src="audio/sapi.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-sapi">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐍</div>
+                    <h3>Ular</h3>
+                    <audio id="audio-ular" src="audio/sanca.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-ular">🔊 Putar Suara</button>
+                </div>
+                <div class="audio-card">
+                    <div class="audio-avatar">🐋</div>
+                    <h3>Sapi</h3>
+                    <audio id="audio-paus" src="audio/paus.mp3"></audio>
+                    <button class="btn-audio" data-target="audio-paus">🔊 Putar Suara</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO DOKUMENTER -->
+        <section id="video">
+            <h2>Video Dokumenter</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="Video/harimau.mp4" title="Harimau Sumatra" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Kehidupan Harimau Sumatra di Habitat Asli</h3>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="Video/komodo.mp4" title="Komodo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Komodo Hanya ada di Indonesia</h3>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="Video/gajah.mp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Kehidupan Gajah Afrika</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Edukasi Satwa Nusantara. Dibuat dengan 💚 untuk Kelestarian Alam.</p>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
